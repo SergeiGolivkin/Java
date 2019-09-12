@@ -1,4 +1,4 @@
-package golivkin.dz_01.task_02;
+package golivkin.dz_02.task_02;
 
 public class handSalary {
     public static void main(String[] agrs) {

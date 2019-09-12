@@ -1,4 +1,4 @@
-package golivkin.dz_01.task_03;
+package golivkin.dz_02.task_03;
 
 public class theCostOfGasoline {
 

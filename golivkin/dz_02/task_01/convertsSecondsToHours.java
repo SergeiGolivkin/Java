@@ -1,4 +1,4 @@
-package golivkin.dz_01.task_01;
+package golivkin.dz_02.task_01;
 
 public class convertsSecondsToHours {
     public static  void main (String[]agrs){
