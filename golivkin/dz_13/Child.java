@@ -1,8 +1,9 @@
 package golivkin.dz_13;
 import java.util.ArrayList;
-public class Child extends Mother {
 
-    ArrayList<Food> foods = new ArrayList<>();
+ class Child  {
+
+   private ArrayList<Food> foods = new ArrayList<>();
 
     {
 
@@ -12,19 +13,24 @@ public class Child extends Mother {
     }
 
 
-    Food eat(Food food) throws Exception {
-        try {
 
 
-            if (foods.contains(food)) {
-                System.out.println("Съел "+ food.getTitle() + " за обе щеки. Спасибо мама!");
-                System.out.println("Спасибо мама!");
+       void   eat(Food food) {
+         try {
+             if (foods.contains(food)) {
+                 System.out.println("Съел " + food.getTitle() + " за обе щеки.");
 
-            }
+             } else {
+                 throw new IllegalArgumentException(String.format("Не стал есть " + food.getTitle()));
 
-        } catch (Exception e){
+             }
+         } finally {
+             System.out.println(" Спасибо, мама!");
+         }
+     }
 
 
-        }return food;
+
+
+
     }
-}

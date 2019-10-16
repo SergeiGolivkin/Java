@@ -1,6 +1,6 @@
 package golivkin.dz_13;
 
-public enum Food {
+ enum Food {
     APPLE("Яблоко"),
     BANANA("Банан"),
     BROCCOLI("Броколи"),
@@ -9,7 +9,7 @@ public enum Food {
 
 
 
-    public  String title;
+      private String title;
 
     Food(String title) {
         this.title = title;
