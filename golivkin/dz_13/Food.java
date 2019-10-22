@@ -1,6 +1,7 @@
 package golivkin.dz_13;
 
- enum Food {
+ enum
+ Food {
     APPLE("Яблоко"),
     BANANA("Банан"),
     BROCCOLI("Броколи"),

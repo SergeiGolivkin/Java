@@ -2,40 +2,43 @@ package golivkin.dz_07.task_01;
 
 import java.util.ArrayList;
 
-public class VendingMachine {
-    private int cash;
-    public int price;
-    private ArrayList<Integer> myCash = new ArrayList<>();
-    public void setCash(int cash) {
-        if (cash <= 0) {
-            System.out.println("Введите корректную сумму!");
-        } else {
-            this.cash = cash;
-            myCash.add(cash);
-            price = 0;
-            for (int i = 0; i < myCash.size(); i++) {
-                price = price + myCash.get(i);
-            }
-            System.out.println("Баланс " + price + " рублей, выбеоите номер напитка :");
-        }
-    }
-    public  void getCash(int cash) {
-        price = 0;
-        for (int i = 0; i < myCash.size(); i++) {
-            price = price + myCash.get(i);
-        }
-        if (cash > price) {
-            System.out.println("У вас недостаточно средств!");
-        } else {
-            myCash.clear();
-            myCash.add(price - cash);
-            for (int i = 0; i < myCash.size(); i++) {
-                price =  myCash.get(i);
-            }
-            System.out.println("Ваша сдача " + price + " рублей");
+ class VendingMachine {
 
+     private int balance;
+     private ArrayList<Integer> myCash = new ArrayList<>();
+     void setCash(int cash) {
+         if (cash <= 0) {
+             System.out.println("Введите корректную сумму!");
+         } else {
+             myCash.add(cash);
+             balance = 0;
+             for (int i = 0; i < myCash.size(); i++) {
+                 balance = balance + myCash.get(i);
+             }
+             System.out.println("Баланс " + balance +
+                     " рублей, выберите номер напитка и нажмите Enter :");
+         }
+     }
+    int getCash(int cash) {
+       balance = 0;
+       for (int i = 0; i < myCash.size(); i++) {
+           balance = balance + myCash.get(i);
+       }
+       if (cash > balance) {
+           System.out.println("У вас недостаточно средств!");
+       } else {
+           myCash.clear();
+           myCash.add(balance - cash);
+           for (int i = 0; i < myCash.size(); i++) {
+               balance = myCash.get(i);
 
-        }
-    }
+               System.out.println("Ваша сдача " + balance + " рублей");
+               System.out.println("Заберите товар");
+           }
+       }return cash;
 
+   }
 }
+
+
+
