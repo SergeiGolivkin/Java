@@ -2,7 +2,7 @@ package golivkin.dz_21.task_02;
 
 public class MyArray2 {
     public static void main(String[] args) {
-        int[][] array = {{1, 2, 3, 4, 5, 6, 7, 8, 9, 10},{1,2,3,4,5,6,7,8,9,10}};
+        int[][] array = {{1, 2, 3, 4, 5, 6, 7, 8, 9, 10},{1, 2, 3, 4, 5, 6, 7, 8, 9, 10}};
 
         System.out.println("Массив до: ");
         for (int i = 0; i < array.length; i++) {
