@@ -2,6 +2,10 @@ package golivkin.dz_22.task_01;
 import java.util.ArrayList;
 import java.util.List;
 
+/*Написать класс PersonSuperComparator,
+ который имплементит Comparator, но умеет сравнивать по двум параметрам , возраст и имя.
+ Класс Person теперь содержит два поля int age и String name*/
+
 public class App {
 
     public static void main(String[] args) {
