@@ -2,6 +2,7 @@ package golivkin.dz_25.task_01;
 
 import java.util.Collections;
 import java.util.HashMap;
+import java.util.HashSet;
 import java.util.Map;
 
 /*public boolean isUnique(Map<String, String> map);
@@ -40,6 +41,10 @@ public class Friends {
         }
         return true;
     }
+
+   // public boolean isUnique(Map<String, String> map) {
+       // return map.values().size() == new HashSet<>(map.values()).size();
+   // }
 
 
 
