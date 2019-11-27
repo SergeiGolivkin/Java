@@ -2,6 +2,8 @@ package golivkin.dz_24.task_01;
 
 import java.util.HashSet;
 import java.util.Set;
+/*Написать метод, который возвращает множество, в котором удалены все элементы четной длины из исходного множества.
+public Set<String> removeEvenLength(Set<String> set);*/
 
 public class Fruits {
     public static void main(String[] args) {
